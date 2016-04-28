@@ -10,6 +10,10 @@ export default class PagarMe {
         return new CardCollection(this);
     }
 
+    card(id: string) {
+        return new Endpoint<Card>(`cards/${id}`, {api_key: this.api_key});
+    }
+
     get transactions() {
         return new TransactionCollection(this);
     }
@@ -32,9 +36,6 @@ export interface CardData {
 export class CardCollection {
     constructor(private pagarme: PagarMe) {}
 
-    get(id: string) {
-        return new Endpoint<Card>(`cards/${id}`, {api_key: this.pagarme.api_key});
-    }
 
     insert(cardHash: string) {
         return new Endpoint<Card>(`cards`, {api_key: this.pagarme.api_key, card_hash: cardHash}, "POST");
