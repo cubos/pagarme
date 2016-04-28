@@ -7,11 +7,23 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "target": "ES6",
-		"module": "CommonJS",
-		"outDir": "dist"
+    "module": "CommonJS",
+    "outDir": "dist"
   },
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "filesGlob": [
+    "src/*.ts",
+    "typings/main.d.ts"
+  ],
   "files": [
-    "pagarme.ts",
+    "src/base.ts",
+    "src/card.ts",
+    "src/objects.ts",
+    "src/pagarme.ts",
+    "src/plan.ts",
+    "src/transaction.ts",
     "typings/main.d.ts"
   ]
 }
