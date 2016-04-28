@@ -1,6 +1,6 @@
 {
   "name": "pagarme",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple nodejs wrapper for the Pagar.me API",
   "main": "dist/pagarme.js",
   "scripts": {
@@ -10,10 +10,14 @@
   "typescript": {
     "definition": "dist/pagarme.d.ts"
   },
+  "typings": "dist/pagarme.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/CubosTecnologia/pagarme"
   },
+  "files": [
+    "dist/"
+  ],
   "author": "Guilherme Bernal",
   "license": "ISC",
   "dependencies": {
