@@ -21,6 +21,10 @@ export class LazyPlanCollection extends LazyPromiseArray<Plan> {
             page += 1;
         }
     }
+
+    insert(obj: PlanInsert) {
+        return new Endpoint<Plan>(`plans`, Object.assign({}, {api_key: this.pagarme.api_key}, obj), "POST");
+    }
 }
 
 export class LazyPlanObject extends Endpoint<Plan> {
@@ -32,4 +36,16 @@ export class LazyPlanObject extends Endpoint<Plan> {
 export interface PlanUpdate {
     name?: string;
     trial_days?: number;
+}
+
+export interface PlanInsert {
+    amount: number;
+    days: number;
+    name: string;
+    trial_days: number;
+    date_created: Date;
+    payment_methods: ("boleto" | "credit_card")[];
+    color?: string;
+    charges: number;
+    installments: number;
 }
