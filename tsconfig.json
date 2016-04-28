@@ -1,0 +1,17 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "target": "ES6",
+		"module": "CommonJS",
+		"outDir": "dist"
+  },
+  "files": [
+    "pagarme.ts",
+    "typings/main.d.ts"
+  ]
+}
