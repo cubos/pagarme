@@ -1,6 +1,6 @@
-import PagarMe from "./pagarme.ts";
-import {Endpoint} from "./base.ts";
-import {CardHashKey} from "./objects.ts";
+import PagarMe from "./pagarme";
+import {Endpoint} from "./base";
+import {CardHashKey} from "./objects";
 
 export class LazyTransactionCollection {
     constructor(private pagarme: PagarMe) { }

@@ -1,6 +1,6 @@
 {
   "name": "pagarme",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "A simple nodejs wrapper for the Pagar.me API",
   "main": "dist/pagarme.js",
   "scripts": {

@@ -1,9 +1,9 @@
 import querystring from "querystring";
 import crypto from "crypto";
 import constants from "constants";
-import {LazyPlanCollection, LazyPlanObject} from "./plan.ts";
-import {LazyCardCollection, LazyCardObject} from "./card.ts";
-import {LazyTransactionCollection} from "./transaction.ts";
+import {LazyPlanCollection, LazyPlanObject} from "./plan";
+import {LazyCardCollection, LazyCardObject} from "./card";
+import {LazyTransactionCollection} from "./transaction";
 
 export const PAGE_SIZE = 30;
 

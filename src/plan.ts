@@ -1,7 +1,7 @@
-import PagarMe from "./pagarme.ts";
-import {PAGE_SIZE} from "./pagarme.ts";
-import {LazyPromiseArray, Endpoint} from "./base.ts";
-import {Plan} from "./objects.ts";
+import PagarMe from "./pagarme";
+import {PAGE_SIZE} from "./pagarme";
+import {LazyPromiseArray, Endpoint} from "./base";
+import {Plan} from "./objects";
 
 export class LazyPlanCollection extends LazyPromiseArray<Plan> {
     constructor(private pagarme: PagarMe) {

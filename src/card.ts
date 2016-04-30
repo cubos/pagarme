@@ -1,6 +1,6 @@
-import PagarMe from "./pagarme.ts";
-import {Endpoint} from "./base.ts";
-import {Card} from "./objects.ts";
+import PagarMe from "./pagarme";
+import {Endpoint} from "./base";
+import {Card} from "./objects";
 
 export class LazyCardCollection {
     constructor(private pagarme: PagarMe) { }
