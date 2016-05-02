@@ -18,6 +18,7 @@
     "typings/main.d.ts"
   ],
   "files": [
+    "src/bank_account.ts",
     "src/base.ts",
     "src/card.ts",
     "src/objects.ts",
